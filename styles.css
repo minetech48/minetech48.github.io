@@ -1,0 +1,42 @@
+body {
+	background-color: #071b27;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+Info {
+	color: #ffffff;
+}
+
+figcaption {
+	color: #000000;
+}
+
+StyledText1 {
+	color: #ff0000;
+}
+
+Rainbow {
+	color: #ffffff;
+}
+RainbowBackground {
+	background-color: #ffffff;
+}
+
+.grid-container {
+	display: grid;
+	/* grid-template-columns: auto auto auto auto; */
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2px;
+	background-color: #2196F3;
+	padding: 10px;
+}
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+  }
