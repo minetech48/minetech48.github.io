@@ -1,8 +1,40 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="../styles.css">
+<script src="../index.js"></script>
+
+	<style>
+	</style>
 	<head></head>
-	
-	<body>
-		hello1
+
+	<body onload="initProjectPage('Mandelbrot Renderer')">
+		<div class="banner" id="banner">
+			<a href="../index.html">back</a>
+		</div>
+
+		<div class="title" id="title"></div>
+		<div class="image-body">
+			<img id="thumbnail" src="thumbnail.png">
+			<figcaption>Fully zoomed out image</figcaption>
+		</div>
+		
+		<div class="text-body">
+			Software Mandelbrot renderer written with Java’s
+			Swing library (as with most of my Uis to date).
+			Program splits the frame up into segments in order to allow
+			for use of multiple CPU threads.
+		</div>
+
+		<div class="gallery1">
+			<img src="mandelbrot1.png">
+			<figcaption>figure 1: segmented render blocks</figcaption>
+		</div>
+
+		<div class="gallery2">
+			<img src="mandelbrot2.png" height="360">
+			<img src="mandelbrot3.png" height="360">
+			<figcaption>figure 2: zoomed in slightly</figcaption>
+			<figcaption>figure 3: floating point limit</figcaption>
+		</div>
 	</body>
 </html>

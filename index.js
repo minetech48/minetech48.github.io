@@ -1,13 +1,20 @@
 var grid;
 
+function initProjectPage(projectName) {
+	console.log("Loading project page for: " + projectName);
+
+	document.getElementById("title").innerHTML = projectName;
+}
+
 function addElements() {
 	console.log("adding project elements");
 	
 	grid = document.getElementById("projectGrid");
 	
 	addProjectLink("Mandelbrot Renderer")
+	addProjectLink("Nd Minesweeper");
 	addProjectLink("project1");
-	addProjectLink("project2");
+	addProjectLink("project template");
 	addProjectLink("project3");
 	addProjectLink("project4");
 	addProjectLink("project5");
