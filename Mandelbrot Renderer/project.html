@@ -19,22 +19,40 @@
 		</div>
 		
 		<div class="text-body">
-			Software Mandelbrot renderer written with Java’s
-			Swing library (as with most of my Uis to date).
-			Program splits the frame up into segments in order to allow
+			This is a software Mandelbrot renderer written to use Java’s Swing library.
+			The program does split the frame up into segments in order to allow
 			for use of multiple CPU threads.
 		</div>
 
 		<div class="gallery1">
-			<img src="mandelbrot1.png">
+			<img src="mandelbrot1.png" height="360">
 			<figcaption>figure 1: segmented render blocks</figcaption>
 		</div>
 
 		<div class="gallery2">
 			<img src="mandelbrot2.png" height="360">
 			<img src="mandelbrot3.png" height="360">
-			<figcaption>figure 2: zoomed in slightly</figcaption>
+			<figcaption>figure 2: zoomed in image</figcaption>
 			<figcaption>figure 3: floating point limit</figcaption>
+		</div>
+		
+		<div class="text-body">
+			A better explanation of the Mandelbrot set than I could possibly do can be found on
+			<a href="https://en.wikipedia.org/wiki/Mandelbrot_set">wikipedia</a>.<br>
+			This program implements the complex equation in Java on the CPU, and renders it using the Swing library.
+			It has some built in keybindings to increment or decrement the number of itterations it calculates.
+			It also copies and scales the previous frame into the current one for more seamless use.
+			Finally, this algorithm is highly parallelizable, and while this program runs it on the CPU, it is
+			made to split up the screen in order to make use of multiple CPU cores (figure 1).
+			<br><br>
+			This program uses 64-bit floating point numbers for its calculations, and thus, runs into precision errors
+			around a scale of 10^17 (figure 3).
+		</div>
+		
+		<div class="gallery1">
+		<video controls height="360">
+			<source src="mandelbrot-demo.mp4" type="video/mp4">Could not load video.</video>
+			<figcaption>video demoing the program</figcaption>
 		</div>
 	</body>
 </html>

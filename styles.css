@@ -2,7 +2,7 @@ body {
 	background-color: #071b27;
 }
 a {
-	color: #ffffff;
+	color: #2222ff;
 	text-decoration: none;
 }
 
@@ -14,6 +14,13 @@ figcaption {
 	color: #000000;
 	text-align: center;
 	font-size: 30px;
+}
+video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: #2196F3;
 }
 
 .banner {
@@ -43,10 +50,13 @@ figcaption {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-
+	
 	font-size: x-large;
 	color: #ffffff;
 	background-color: #124670;
+	
+	border-left: 4px solid #124670;
+	border-right: 4px solid #124670;
 }
 
 .gallery1 {
