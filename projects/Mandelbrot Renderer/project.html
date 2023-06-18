@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/styles.css">
+<script src="/index.js"></script>
+
+	<style>
+	</style>
+	<head></head>
+
+	<body onload="initProjectPage('Mandelbrot Renderer')">
+		<div class="banner" id="banner"></div>
+
+		<div class="title" id="title"></div>
+		<div class="image-body">
+			<img id="thumbnail" src="thumbnail.png">
+			<figcaption>Fully zoomed out image</figcaption>
+		</div>
+		
+		<div class="text-body">
+			This is a software Mandelbrot renderer written to use Java’s Swing library.
+			The program does split the frame up into segments in order to allow
+			for use of multiple CPU threads.
+		</div>
+
+		<div class="gallery1">
+			<img src="mandelbrot1.png" height="360">
+			<figcaption>figure 1: segmented render blocks</figcaption>
+		</div>
+
+		<div class="gallery2">
+			<img src="mandelbrot2.png" height="360">
+			<img src="mandelbrot3.png" height="360">
+			<figcaption>figure 2: zoomed in image</figcaption>
+			<figcaption>figure 3: floating point limit</figcaption>
+		</div>
+		
+		<div class="text-body">
+			A better explanation of the Mandelbrot set than I could possibly do can be found on
+			<a href="https://en.wikipedia.org/wiki/Mandelbrot_set">wikipedia</a>.<br>
+			This program implements the complex equation in Java on the CPU, and renders it using the Swing library.
+			It has some built in keybindings to increment or decrement the number of itterations it calculates.
+			It also copies and scales the previous frame into the current one for more seamless use.
+			Finally, this algorithm is highly parallelizable, and while this program runs it on the CPU, it is
+			made to split up the screen in order to make use of multiple CPU cores (figure 1).
+			<br><br>
+			This program uses 64-bit floating point numbers for its calculations, and thus, runs into precision errors
+			around a scale of 10^17 (figure 3). This could be solved by using larger or even dynamically sized floating point numbers.
+		</div>
+		
+		<div class="gallery1">
+		<video controls height="360">
+			<source src="mandelbrot-demo.mp4" type="video/mp4">Could not load video.</video>
+			<figcaption>video demoing the program</figcaption>
+		</div>
+	</body>
+</html>
