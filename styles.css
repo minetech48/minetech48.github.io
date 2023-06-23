@@ -6,6 +6,11 @@ a {
 	text-decoration: none;
 }
 
+p {
+	text-indent: 1em;
+	margin: 0px;
+}
+
 Info {
 	color: #ffffff;
 }

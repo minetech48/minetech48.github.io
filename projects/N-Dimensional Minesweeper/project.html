@@ -16,13 +16,46 @@
 		</div>
 		
 		<div class="text-body">
-			Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit.
-            Optio cum, consequatur deserunt maiores
-            necessitatibus provident voluptatem quibusdam saepe,
-            assumenda quia velit. Blanditiis eos neque sapiente architecto
-            dolores reiciendis aut a.
+			<p> Minesweeper was a game developed by Microsoft in the 1990s, in which the player clicks on a grid of squares to
+			reveal what what is behind any given tile. Most of the time, the tile will be empty, in which case, it will reveal
+			all adjacent tiles. </p>
+			
+			<p> If a tile is adjacent to a mine, it will display a number equal to the number of mines adjacent to it.
+				If the clicked tile is a mine, all tiles are revealed and the game ends.
+			</p>
+			<p> The player is given a flag tool
+				in order to mark the tiles that they have deduced contains a mine. The goal of the game is to reveal every tile
+				except for the mines.
+			</p>
+			<p> Importantly, an adjacent tile is defined as any tile within one unit in each grid direction
+				(meaning corners are included)
+			</p>
+			
+			<p> Now for my small project, some time in 2018 I suddenly got the idea to nest arrays in order to create a
+				structure that can define/contain an arbitrary number of dimensions, rather than just the normal 2.
+			</p>
 		</div>
-		<a href="project.md">projectMD</a>
+		
+		<div class="gallery2">
+			<img src="minesweeper3.png" height="360">
+			<img src="minesweeper2.png" height="360">
+			<figcaption>Figure1: 5D board</figcaption>
+			<figcaption>Figure2: Simple board size prompt</figcaption>
+		</div>
+		
+		<div class="text-body">
+			Figure 1 is a 30x10x10x10x10 board, coordinates in the top right represent the location of the top-left tile,
+			as rendering a 5D plane is not possible. The user can use keybinds [; ‘ , .] to navigate the planes.
+			On this particular board, being 5 dimensional, each tile has 242 direct neighbors.<br>
+			The mines are generated with a 5^n safty bubble around the player’s first click. The mines are
+			generated randomly otherwise, with no guarantee that the board is logically solvable (without guesses) <br>
+			Notice the indicator showing 30,000 mines generated on this playfield, making it unrealistic to fully solve anyway.
+		</div>
+		
+		<div class="gallery1">
+			<video controls height="360">
+				<source src="minesweeper-demo.mp4" type="video/mp4">Could not load video.</video>
+			<figcaption>Demo video shows gameplay and map generation.</figcaption>
+		</div>
 	</body>
 </html>

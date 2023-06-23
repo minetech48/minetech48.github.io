@@ -18,12 +18,12 @@
 		
 		<div class="text-body">
 			This is a software Mandelbrot renderer written to use Java’s Swing library.
-			The program does split the frame up into segments in order to allow
+			The program splits the frame up into segments in order to allow
 			for use of multiple CPU threads.
 		</div>
 
 		<div class="gallery1">
-			<img src="mandelbrot1.png" height="360">
+			<img src="mandelbrot1.png" height="360" width="424">
 			<figcaption>figure 1: segmented render blocks</figcaption>
 		</div>
 
@@ -37,14 +37,19 @@
 		<div class="text-body">
 			A better explanation of the Mandelbrot set than I could possibly do can be found on
 			<a href="https://en.wikipedia.org/wiki/Mandelbrot_set">wikipedia</a>.<br>
-			This program implements the complex equation in Java on the CPU, and renders it using the Swing library.
-			It has some built in keybindings to increment or decrement the number of itterations it calculates.
-			It also copies and scales the previous frame into the current one for more seamless use.
-			Finally, this algorithm is highly parallelizable, and while this program runs it on the CPU, it is
-			made to split up the screen in order to make use of multiple CPU cores (figure 1).
+			<p>Figure 2 is an image taken on a zoomed in part of the fractal. the colors corespond to the number of complex
+				itterations before Z diverges to infinity (>2)
+			</p>
+			<p>This program implements the complex equation in Java on the CPU, and renders it using the Swing library.
+				It has some built in keybindings to increment or decrement the number of itterations it calculates.
+				It also copies and scales the previous frame into the current one for more seamless use.
+				Finally, this algorithm is highly parallelizable, and while this program runs it on the CPU, it is
+				made to split up the screen in order to make use of multiple CPU cores (figure 1).
+			</p>
 			<br><br>
-			This program uses 64-bit floating point numbers for its calculations, and thus, runs into precision errors
-			around a scale of 10^17 (figure 3). This could be solved by using larger or even dynamically sized floating point numbers.
+			<p>This program uses 64-bit floating point numbers for its calculations, and thus, runs into precision errors
+				around a scale of 10^17 (figure 3). This could be solved by using larger or even dynamically sized floating point numbers.
+			</p>
 		</div>
 		
 		<div class="gallery1">
